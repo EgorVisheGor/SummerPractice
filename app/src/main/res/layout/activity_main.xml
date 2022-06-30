@@ -20,7 +20,6 @@
         android:layout_width="250dp"
         android:layout_height="50dp"
         android:ems="10"
-        android:inputType="textPersonName"
         android:hint="Ваше имя"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
@@ -33,7 +32,6 @@
         android:layout_width="250dp"
         android:layout_height="50dp"
         android:ems="10"
-        android:inputType="textPersonName"
         android:hint="Ваш вес"
         app:layout_constraintStart_toStartOf="@id/et_name"
         app:layout_constraintTop_toBottomOf="@id/et_name"/>
@@ -43,7 +41,6 @@
         android:layout_width="250dp"
         android:layout_height="50dp"
         android:ems="10"
-        android:inputType="textPersonName"
         android:hint="Ваш рост"
         app:layout_constraintStart_toStartOf="@id/et_weight"
         app:layout_constraintTop_toBottomOf="@id/et_weight"/>
@@ -53,7 +50,6 @@
         android:layout_width="250dp"
         android:layout_height="50dp"
         android:ems="10"
-        android:inputType="textPersonName"
         android:hint="Ваш возраст"
         app:layout_constraintStart_toStartOf="@id/et_heiht"
         app:layout_constraintTop_toBottomOf="@id/et_heiht" />

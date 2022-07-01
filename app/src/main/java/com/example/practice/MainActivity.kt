@@ -31,7 +31,7 @@ class MainActivity : AppCompatActivity() {
 
         button.setOnClickListener() {
             var name = nameField.toString();
-            var weight = weightField.toString().toIntOrNull();
+            var weight = weightField.toString().toFloatOrNull();
             var height = heightField.toString().toIntOrNull();
             var age = ageField.toString().toIntOrNull();
 

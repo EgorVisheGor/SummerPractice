@@ -1,3 +1,11 @@
 <resources>
     <string name="app_name">Летняя практика 2022</string>
+
+    <string name="menu_profile">Профиль</string>
+    <string name="menu_settings">Настройки</string>
+    <string name="menu_friends">Друзья</string>
+    <string name="menu_music">Музыка</string>
+    <string name="menu_map">Карта</string>
+    <string name="btn_mainscreen">Вернуться на главный экран</string>
+    <string name="menu_mainscreen">Главный экран</string>
 </resources>

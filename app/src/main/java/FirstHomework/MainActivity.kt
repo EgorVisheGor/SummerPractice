@@ -1,11 +1,11 @@
-package com.example.practice
+package FirstHomework
 
 import androidx.appcompat.app.AppCompatActivity
 import android.os.Bundle
-import android.text.Editable
 import android.widget.Button
 import android.widget.EditText
 import android.widget.TextView
+import com.example.practice.R
 
 
 class MainActivity : AppCompatActivity() {
@@ -13,7 +13,6 @@ class MainActivity : AppCompatActivity() {
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
         setContentView(R.layout.activity_main)
-
 
         val nameField = findViewById<EditText>(R.id.et_name).text
         val weightField = findViewById<EditText>(R.id.et_weight).text
@@ -43,7 +42,7 @@ class MainActivity : AppCompatActivity() {
             } else {
                 val result =
                     weight / height / 3.14 - age / age - name.length / name.length + 2
-                answer.text = "Примерный обхват вашей $name талии $result"
+                answer.text = "$name примерный обхват вашей талии $result"
             }
         }
 

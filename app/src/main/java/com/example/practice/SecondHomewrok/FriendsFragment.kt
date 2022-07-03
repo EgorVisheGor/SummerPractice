@@ -1,8 +1,10 @@
-package com.example.practice
+package com.example.practice.SecondHomewrok
+import ThirdHomework.FirstFragment
 import android.os.Bundle
 import android.view.View
 import androidx.fragment.app.Fragment
 import androidx.navigation.fragment.findNavController
+import com.example.practice.R
 import com.example.practice.databinding.FragmentFriendsBinding
 
 class FriendsFragment : Fragment(R.layout.fragment_friends) {
@@ -16,12 +18,15 @@ class FriendsFragment : Fragment(R.layout.fragment_friends) {
 
         with(binding){
             btnFriends.setOnClickListener{
-                findNavController().navigate(R.id.action_friendsFragment_to_firstFragment,
-                FirstFragment.createBundle(tvScreenName.text.toString())
+                findNavController().navigate(
+                    R.id.action_friendsFragment_to_firstFragment,
+                    FirstFragment.createBundle(tvScreenName.text.toString())
                 )
             }
         }
     }
+
+
 
     override fun onDestroyView() {
         _binding = null

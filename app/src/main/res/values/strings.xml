@@ -1,5 +1,5 @@
 <resources>
-    <string name="app_name">Second Homework</string>
+    <string name="app_name">Third Homework</string>
 
     <string name="menu_profile">Profile</string>
     <string name="menu_settings">Settings</string>
@@ -9,4 +9,6 @@
     <string name="menu_mainscreen">Main Screen</string>
 
     <string name="btn_mainscreen">Get to main screen</string>
+
+    <string name="btn_backtolist">Get to songs list</string>
 </resources>

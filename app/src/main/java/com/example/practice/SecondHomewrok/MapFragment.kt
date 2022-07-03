@@ -1,23 +1,25 @@
-package com.example.practice
+package com.example.practice.SecondHomewrok
+
+import ThirdHomework.FirstFragment
 import android.os.Bundle
 import android.view.View
 import androidx.fragment.app.Fragment
 import androidx.navigation.fragment.findNavController
-import com.example.practice.databinding.FragmentMusicBinding
+import com.example.practice.R
+import com.example.practice.databinding.FragmentMapBinding
 
-class MusicFragment : Fragment(R.layout.fragment_music) {
+class MapFragment : Fragment(R.layout.fragment_map) {
 
-    private var _binding: FragmentMusicBinding? = null
-    private val binding get() = _binding!!
-
+    private var _binding : FragmentMapBinding? = null
+    private val binding  get() = _binding!!
     override fun onViewCreated(view: View, savedInstanceState: Bundle?) {
         super.onViewCreated(view, savedInstanceState)
-        _binding = FragmentMusicBinding.bind(view)
+        _binding = FragmentMapBinding.bind(view)
 
-        with(binding) {
-            btnMusic.setOnClickListener {
+        with(binding){
+            btnMap.setOnClickListener{
                 findNavController().navigate(
-                    R.id.action_musicFragment_to_firstFragment,
+                    R.id.action_mapFragment_to_firstFragment,
                     FirstFragment.createBundle(tvScreenName.text.toString())
                 )
             }
@@ -28,4 +30,5 @@ class MusicFragment : Fragment(R.layout.fragment_music) {
         _binding = null
         super.onDestroyView()
     }
+
 }

@@ -7,16 +7,19 @@
 
     <fragment
         android:id="@+id/musicFragment"
-        android:name="com.example.practice.MusicFragment"
+        android:name="ThirdHomework.MusicFragment"
         android:label="MusicFragment"
         tools:layout="@layout/fragment_music">
         <action
             android:id="@+id/action_musicFragment_to_firstFragment"
             app:destination="@id/firstFragment" />
+        <action
+            android:id="@+id/action_musicFragment_to_songInfFragment"
+            app:destination="@id/songInfFragment" />
     </fragment>
     <fragment
         android:id="@+id/firstFragment"
-        android:name="com.example.practice.FirstFragment"
+        android:name="ThirdHomework.FirstFragment"
         android:label="fragment_first"
         tools:layout="@layout/fragment_first" >
         <action
@@ -42,7 +45,7 @@
     <fragment
         android:id="@+id/profileFragment"
         tools:layout="@layout/fragment_profile"
-        android:name="com.example.practice.ProfileFragment"
+        android:name="com.example.practice.SecondHomewrok.ProfileFragment"
         android:label="ProfileFragment"
         >
         <action
@@ -51,7 +54,7 @@
     </fragment>
     <fragment
         android:id="@+id/settingFragment"
-        android:name="com.example.practice.SettingFragment"
+        android:name="com.example.practice.SecondHomewrok.SettingFragment"
         android:label="SettingFragment" >
         <action
             android:id="@+id/action_settingFragment_to_firstFragment"
@@ -59,7 +62,7 @@
     </fragment>
     <fragment
         android:id="@+id/friendsFragment"
-        android:name="com.example.practice.FriendsFragment"
+        android:name="com.example.practice.SecondHomewrok.FriendsFragment"
         android:label="FriendsFragment" >
         <action
             android:id="@+id/action_friendsFragment_to_firstFragment"
@@ -67,10 +70,18 @@
     </fragment>
     <fragment
         android:id="@+id/mapFragment"
-        android:name="com.example.practice.MapFragment"
+        android:name="com.example.practice.SecondHomewrok.MapFragment"
         android:label="MapFragment" >
         <action
             android:id="@+id/action_mapFragment_to_firstFragment"
             app:destination="@id/firstFragment" />
+    </fragment>
+    <fragment
+        android:id="@+id/songInfFragment"
+        android:name="ThirdHomework.SongInfFragment"
+        android:label="SongInfFragment" >
+        <action
+            android:id="@+id/action_songInfFragment_to_musicFragment"
+            app:destination="@id/musicFragment" />
     </fragment>
 </navigation>

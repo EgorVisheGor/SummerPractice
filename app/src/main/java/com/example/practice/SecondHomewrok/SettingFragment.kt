@@ -1,9 +1,11 @@
-package com.example.practice
+package com.example.practice.SecondHomewrok
 
+import ThirdHomework.FirstFragment
 import android.os.Bundle
 import android.view.View
 import androidx.fragment.app.Fragment
 import androidx.navigation.fragment.findNavController
+import com.example.practice.R
 import com.example.practice.databinding.FragmentSettingsBinding
 
 class SettingFragment : Fragment(R.layout.fragment_settings) {

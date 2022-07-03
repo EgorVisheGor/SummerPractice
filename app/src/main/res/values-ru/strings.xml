@@ -8,4 +8,5 @@
     <string name="menu_map">Карта</string>
     <string name="btn_mainscreen">Вернуться на главный экран</string>
     <string name="menu_mainscreen">Главный экран</string>
+    <string name="btn_backtolist">Вернуться к списку песен</string>
 </resources>

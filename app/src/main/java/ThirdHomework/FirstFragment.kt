@@ -1,8 +1,9 @@
-package com.example.practice
+package ThirdHomework
 
 import android.os.Bundle
 import android.view.View
 import androidx.fragment.app.Fragment
+import com.example.practice.R
 import com.example.practice.databinding.FragmentFirstBinding
 import com.google.android.material.snackbar.Snackbar
 

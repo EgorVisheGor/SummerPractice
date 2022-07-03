@@ -35,8 +35,7 @@ class MainActivity : AppCompatActivity() {
                 || height !in 0..250
                 || weight < 0
                 || weight > 250
-                || age < 0
-                || age > 150
+                || age !in 0..250
             ) {
                 answer.text = "Данные введены некорректно"
             } else {

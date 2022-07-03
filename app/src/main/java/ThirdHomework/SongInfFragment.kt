@@ -1,11 +1,17 @@
 package ThirdHomework
 
 import android.os.Bundle
+import android.view.KeyCharacterMap.load
+import android.view.PointerIcon.load
 import android.view.View
+import androidx.core.view.PointerIconCompat.load
 import androidx.fragment.app.Fragment
 import androidx.navigation.fragment.findNavController
+import com.bumptech.glide.Glide
 import com.example.practice.R
 import com.example.practice.databinding.FragmentSonginfBinding
+import java.lang.System.load
+import java.util.ServiceLoader.load
 
 class SongInfFragment : Fragment(R.layout.fragment_songinf) {
 
@@ -18,7 +24,9 @@ class SongInfFragment : Fragment(R.layout.fragment_songinf) {
 
         val text = arguments?.getString(ARG_TEXT).orEmpty()
         if (text.isNotEmpty()) {
-            binding.tvSonginf.text = "${SongRepository.songs[text.toInt()].toString()}"}
+            val song = SongRepository.songs[text.toInt()]
+            binding.tvSonginf.text = "${song.toString()}"
+            Glide.with(this).load(song.url).into(this.binding.ivPainting)}
 
         with(binding) {
             btnBack.setOnClickListener {

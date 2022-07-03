@@ -1,12 +1,12 @@
-package com.example.practice
+package com.example.practice.SecondHomewrok
 
+import ThirdHomework.FirstFragment
 import android.os.Bundle
 import android.view.View
 import androidx.fragment.app.Fragment
 import androidx.navigation.fragment.findNavController
-import androidx.navigation.ui.setupWithNavController
+import com.example.practice.R
 import com.example.practice.databinding.FragmentProfileBinding
-import com.google.android.material.bottomnavigation.BottomNavigationView
 
 class ProfileFragment : Fragment(R.layout.fragment_profile) {
 
